@@ -1,0 +1,37 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #3498db;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .weather-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .weather-container.animated {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 2.5s ease-out, transform 2.5s ease-out;
+  }
+  
+  h1 {
+    color: #333;
+    font-size: 24px;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #555;
+    margin: 5px 0;
+  }
+  

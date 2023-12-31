@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="weatherApp">
+
+<head>
+  <title>Weather App</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.min.js"></script>
+  <script src="app.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body ng-controller="WeatherController as vm">
+  <div class="weather-container" ng-class="{ 'animated': vm.animate }">
+    <h1>{{ vm.weather.city }} Weather</h1>
+    <p>Temperature: {{ vm.weather.temperature }}°C</p>
+    <p>Climate: {{ vm.weather.climate }}</p>
+    <p>Sunrise: {{ vm.weather.sunrise }}</p>
+    <p>Sunset: {{ vm.weather.sunset }}</p>
+  </div>
+</body>
+
+</html>
